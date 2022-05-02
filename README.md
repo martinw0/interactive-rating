@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/martinw0/interactive-rating)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/martinw0/interactive-rating)
+- Live Site URL: [GitHub Pages](https://martinw0.github.io/interactive-rating/)
 
 ## My process
 
@@ -58,7 +58,7 @@ Users should be able to:
 
 ### Useful resources
 
-
+- [Manage vertical space with flexbox](https://stackoverflow.com/questions/25098042/fill-remaining-vertical-space-with-css-using-displayflex)
 
 ## Author
 

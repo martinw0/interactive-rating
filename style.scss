@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsla(216, 12%, 54%, 0.22);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+.attribution { font-size: 11px; text-align: center; color: $orange; margin-bottom: 5px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body, main {
+    margin: 0;
+    height: 100vh;
+    background-color: $very-dark-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.rating-state, .thank-state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    border-radius: 5%;
+    padding: 30px 20px;
+    background-color: $dark-blue;
+    font-family: 'Overpass';
+    h1 {
+        color: $white;
+        font-weight: 400;
+        font-size: 24px;
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+    p {
+        color: $light-grey;
+        font-size: 15px;
+        margin-bottom: 25px;
+        line-height: 1.4;
+    }
+    .rate {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        button {
+            color: $light-grey;
+            background-color: $medium-grey;
+            height: 40px;
+            width: 40px;
+            border: none;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 15px;
+        }
+    }
+    input {
+        color: $white;
+        background-color: $orange;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        border: none;
+        border-radius: 20px;
+        padding: 12px
+    }
+
+}
+
+.rating-state {
+    img {
+        height: 16px;
+        width: 17px;
+        padding: 7px;
+        border-radius: 50%;
+        background-color: $medium-grey;
+    }
+}
+
+.thank-state {
+    display: none;
+    align-items: center;
+    img {
+        height: 108px;
+        width: 162px;
+    }
+    p {
+        text-align: center;
+    }
+    .result {
+        background-color: $medium-grey;
+        color: $orange;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 15px;
+        font-size: 15px;
+        margin-top: 30px;
+    }
+}

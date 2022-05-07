@@ -64,6 +64,14 @@ main {
   font-weight: 700;
   font-size: 15px;
 }
+.rating-state .rate button:hover, .thank-state .rate button:hover {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+}
+.rating-state .rate .active, .thank-state .rate .active {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(217deg, 12%, 63%);
+}
 .rating-state input, .thank-state input {
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(25deg, 97%, 53%);
@@ -73,6 +81,10 @@ main {
   border: none;
   border-radius: 20px;
   padding: 12px;
+}
+.rating-state input:hover, .thank-state input:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0deg, 0%, 100%);
 }
 
 .rating-state img {

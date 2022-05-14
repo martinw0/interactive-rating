@@ -5,14 +5,14 @@ buttons.forEach(el => {
         el.classList.add("active");
     })
 });
-document.querySelector('input').onclick = function() {
-    rate = document.querySelector('div.rate button.active').textContent;
-    document.querySelector('div.rating-state').style.display = 'none';
-    document.querySelector('div.thank-state button span').textContent = rate;
-    document.querySelector('div.thank-state').style.display = 'flex';
+document.getElementById('submit').onclick = function() {
+    rate = document.getElementsByClassName('active')[0].textContent;
+    document.getElementsByClassName('rating-state')[0].style.display = 'none';
+    document.getElementById('result-number').textContent = rate;
+    document.getElementsByClassName('thank-state')[0].style.display = 'flex';
 };
 function removeActiveState() {
-    document.querySelectorAll('div.rate button.active').forEach(el => {
+    Array.from(document.getElementsByClassName('active')).forEach(el => {
         el.classList.remove("active");
     });
 };

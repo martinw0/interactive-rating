@@ -9,7 +9,7 @@
   <title>Frontend Mentor | Interactive rating component</title>
 
   <link rel="stylesheet" href="./style.css">
-  <script src="script.js" defer></script>
+
 </head>
 <body>
   <main>
@@ -27,11 +27,11 @@
         <button type="button">4</button>
         <button type="button">5</button>
       </div>
-      <input type="submit">
+      <input id="submit" type="submit">
     </div>
     <div class="thank-state">
       <img src="./images/illustration-thank-you.svg" alt="Thank you">
-      <button class="result">You selected <span></span> out of 5</button>
+      <button class="result">You selected <span id="result-number"></span> out of 5</button>
       <h1>Thank you!</h1>
       <p>We appreciate you taking the time to give a rating. If you ever need more support, 
       don’t hesitate to get in touch!</p>
@@ -43,5 +43,6 @@
       Coded by <a href="#">Martin Wallet</a>.
     </div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
